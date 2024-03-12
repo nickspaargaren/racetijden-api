@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "API for Racetijden.nl",
   "scripts": {
-    "dev": "listhen -w --open ./src/app.ts"
+    "dev": "listhen -w --open ./src/app.ts",
+    "typescript": "tsc --noEmit"
   },
   "license": "ISC",
   "dependencies": {
     "h3": "^1.11.1",
     "listhen": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.26",
+    "typescript": "^5.4.2"
   }
 }
