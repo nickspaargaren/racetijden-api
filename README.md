@@ -3,6 +3,7 @@
 ### Requirements
 - npm
 
-### Start the application
+### Local development
 
-- `npm run dev`
+- Run `npm install` to install the dependencies
+- Run `npm run dev` to start the application
