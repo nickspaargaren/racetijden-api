@@ -1,0 +1,13 @@
+{
+  "name": "racetijden-api",
+  "version": "1.0.0",
+  "description": "API for Racetijden.nl",
+  "scripts": {
+    "dev": "listhen -w --open ./src/app.ts"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "h3": "^1.11.1",
+    "listhen": "^1.7.2"
+  }
+}
