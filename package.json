@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "API for Racetijden.nl",
   "scripts": {
-    "dev": "listhen -w --open ./src/app.ts",
-    "typescript": "tsc --noEmit"
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "start": "node .output/server/index.mjs",
+    "types": "nitro prepare",
+    "typescript": "tsc --noEmit",
+    "prettier": "prettier --check .",
+    "prettier:fix": "npx prettier . --write"
   },
   "license": "ISC",
-  "dependencies": {
-    "h3": "^1.11.1",
-    "listhen": "^1.7.2"
-  },
   "devDependencies": {
     "@types/node": "^20.11.26",
+    "nitropack": "^2.9.4",
+    "prettier": "3.2.5",
     "typescript": "^5.4.2"
   }
 }
