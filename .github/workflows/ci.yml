@@ -11,8 +11,6 @@ jobs:
           cache: "npm"
       - name: Install modules
         run: npm ci
-      - name: Generate types
-        run: npm run types
       - name: Run TypeScript Check
         run: npm run typescript
   prettier:
