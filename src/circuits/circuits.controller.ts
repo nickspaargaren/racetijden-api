@@ -47,14 +47,7 @@ export class CircuitsController {
   })
   async createCircuit(
     @Body()
-    circuitData: {
-      name: string;
-      description: string;
-      location: string;
-      flag: string;
-      createdAt: Date;
-      id: number;
-    }
+    circuitData: Circuits,
   ): Promise<Circuits> {
     return this.circuitsService.createCircuit(circuitData);
   }
